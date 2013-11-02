@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html ng-app lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Portfolio of Iwan Ruslani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am a web producer and front-end developer, working with businesses and organizations to create attractive user centric and intuitive websites.">
+    <meta name="keywords" content="Web Developer, Web Producer, Developer, HTML5, CSS3, JavaScript, jQuery, JSP, Enginner, Software Developer, Software Enginner, ">
+    <meta name="author" content="Iwan Ruslani">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpjC_JCxvQ7TrXyRQZooZHfoMcoMJW1Js&sensor=true">
+</script>
+<script src="js/google.maps.api.js"></script>
+
+<style type="text/css">
+@media (min-width: 768px) and (max-width: 1200px) {
+/* Fix for li float left issue */
+.thumbnail {_max-height: 470px;}
+}
+</style>
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top " style="position:fixed">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Welcome to my Portfolio</a>
+          <div class="nav-collapse collapse pull-right" style="margin-right:90px;">
+            <ul class="nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-align-justify"></i>&nbsp;MENU<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://about.me/iruslani">About Me</a></li>
+                  <li><a href="https://docs.google.com/document/d/1PuBOvhJGTfpoXnv1Rdfn45A3oBYZ2qQrmYEtTKipRc4/edit?usp=sharing">Resume</a></li>
+                  <li><a href="#contactMe" data-toggle="modal">Contact Me</a></li>
+                  <li><a href="http://stackoverflow.com/users/1440509/iwan" data-toggle="modal">StackOverflow</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Portfolio</li>
+                  <li><a href="#">Employment</a></li>
+                  <li><a href="#">Freelance</a></li>
+                  <li><a href="#">Graphics</a></li>
+                  <li><a href="samples/clubworks/tv/redwhiteblue.html">Flash</a></li>
+                  <li><a href="blog/tumblr_api_test.html">tumblr API test</a></li>
+                  <li><a href="/appdemo/json-example/">json Example</a></li>
+                  <li><a href="/appdemo/jquery-xml-test/">XML Data Example</a></li>
+                  <li><a href="/appdemo/foursquare/">FourSquare Venue API</a></li>
+                  <li><a href="appdemo/age-verification-jquery/demo/">jQuery Age Verification (Cookies)</a></li>
+                </ul>
+              </li>          
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+<div class="container" id="wraptest">
+  <div class="row">
+  
+
+  <div class="span2">
+    <ul class="thumbnails">
+    <li class="span2">
+      <a href="#" class="thumbnail">
+        <img data-src="img/suitup.jpg" alt="I'm the guy on the right" style="width: 160px; height: 146px;" src="img/suitup.jpg">
+      </a>
+    </li>
+    </ul>
+
+
+      <h3>
+       Iwan Ruslani
+      </h3>
+
+      <p><a href="#contactMe" data-toggle="modal"> iruslani75(at)gmail.com</a>  <i class="icon-edit"></i> </P>
+
+     <p> <i class="icon-map-marker"></i> <small>Daly City</small> 
+         <i class="icon-heart"></i> <small>Web Developer</small> 
+
+     </p>
+     <a class="btn btn-info" href="http://www.linkedin.com/pub/iwan-ruslani/4/a56/665"><i class="sicon-linkedin"></i>&nbsp;&nbsp;Linkdin</a>
+     <p></p>
+        <a class="btn" href="https://github.com/iruslani"><i class="sicon-github"></i>&nbsp;&nbsp;Github</a>
+     <p></p>
+  </div> 
+  <!-- span2 -->
+
+
+  <div class="span9"> 
+
+<!-- Start Carousel -->
+    <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner">
+
+ <!-- Carousel Content 1 hidden-->
+      
+        <!--<img src="img/xxx/2013_playoffs_1920x1080.jpg" alt="">-->
+
+
+
+ <!-- Carousel Content 2-->
+<div class="item active">
+    <div class="container">
+
+    <p id="demo">Click the button to get your coordinates:</p>
+    <button onclick="getLocation()">Try It</button>
+    <script>
+    var x=document.getElementById("demo");
+    function getLocation()
+      {
+      if (navigator.geolocation)
+        {
+        navigator.geolocation.getCurrentPosition(showPosition);
+        }
+      else{x.innerHTML="Geolocation is not supported by this browser.";}
+      }
+    function showPosition(position)
+      {
+      x.innerHTML="Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;  
+      }
+      </script>
+        <br>
+    <div id="map-canvas"></div>
+    </div>
+</div>
+
+ <!-- Carousel Content 3-->
+<div class="item">
+   
+      <div class="container">
+        <h3>AngularJS Sample</h3>
+    </div>
+    <input type="text" ng-model="name">
+    <p>Hello {{name}}</p>
+
+</div>
+
+</div>
+<!-- end carousel inner -->
+
+
+<!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+
+    </div>
+    </div>
+  
+  </div> <!-- span4-->
+
+</div> <!-- row -->
+</div> <!-- containner-->
+
+
+
+
+
+<div class="_container">
+<div id="navNor" class="navbar">
+  <div class="navbar-inner">
+
+    <div class="container">
+       <a class="brand" href="#">Samples of my work:</a>
+      <!--<button type="button" class="btn btn-navbar" data-toggle="collapse2" data-target=".nav-collapse2">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>-->
+
+      <div class="nav-collapse2 collapse2 pull-left">
+        <ul class="nav">
+          <li class="active"><a href="#">Events</a></li>
+          <li><a href="#about">All</a></li>
+          <li><a href="#about">code</a></li>
+          <li><a href="#about">graphics</a></li>
+        </ul>
+       </div>
+
+      <!--<form class="navbar-search pull-right">
+      <input type="text" class="search-query" placeholder="Search">
+    </form>-->
+    </div>
+  </div>
+</div> 
+</div>
+<!-- /navbar -->
+
+
+<div id="navFixed" class="navbar  navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+
+  
+        <div class="nav-collapse2 collapse2 pull-left">
+          <ul class="nav">
+            <li class="active"><a href="#">Events</a></li>
+            <li><a href="#about">All</a></li>
+            <li><a href="#about">code</a></li>
+            <li><a href="#about">graphics</a></li>
+          </ul>
+         </div>
+
+        <!--<form class="navbar-search pull-right">
+        <input type="text" class="search-query" placeholder="Search">
+      </form>-->
+
+      </div>
+    </div>
+</div> 
+<!-- /navbar-fixed -->
+
+
+
+
+<!-- start Cards row 1-->
+
+<div class ="container" id="Portfolio-Container">
+  <div id="portfolio">
+  </div>  
+</div>
+
+
+<footer >
+  <div id="footerBg">
+<div class="container" >
+
+<div class="row-fluid"><h4>My BookMarks:</h4></div>  
+<div class="row-fluid">
+  
+  <div class="span4">
+
+
+
+
+<ul class="nav nav-list tooltip-demo">
+  <li class="nav-header">Developer Tools</li>
+  <li class="divider"></li>
+  <li><a href="https://developers.google.com/chrome-developer-tools/" data-toggle="tooltip" data-placement="right" title="A web developers best friend. Ctrl+Shift+I on a Mac">Chrome Dev Tools</a></li>
+  <li><a href="http://www.google.com/analytics/" data-toggle="tooltip" data-placement="right" title="We're watching you">Google Analytics</a></li>
+  <li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
+  <li><a href="http://devtellect.github.io/sublime-twitter-bootstrap-snippets/">Sublime Text2 Twitter Boostrap Snippet</a></li>
+  <li><a href="http://www.funduc.com/#">Search and Replace</a></li>
+  <li><a href="http://www.unicodetools.com/unicode/convert-to-html.php" data-toggle="tooltip" data-placement="right" title="Copy and paste those translations with the funny characters here.">Unicode to HTML Converter</a></li>
+  <li><a href="http://www.image-maps.com/" data-toggle="tooltip" data-placement="right" title="Image map creators for people who dont know how to map coordinates =P">Image Maps</a></li>
+  <li><a href="https://filezilla-project.org/" data-toggle="tooltip" data-placement="right" title="A free simple to use FTP client. My favorite feature is: synchronize browsing.">FileZilla</a></li>
+  <li><a href="http://yeoman.io/" data-toggle="tooltip" data-placement="right" title="Yeoman is a robust and opinionated client-side stack, comprising tools and frameworks that can help developers quickly build beautiful web applications.">Yeoman</a></li>
+  <li><a href="http://www.webpagetest.org/" data-toggle="tooltip" data-placement="right" title="This site provides rich diagnostic information including resource loading waterfall charts, Page Speed optimization checks and suggestions for improvements.">webpagetest.org</a></li>
+  <li><a href="http://archive.org/web/web.php" data-toggle="tooltip" data-placement="right" title="Fun stuff. Browse through over 240 billion web pages archived from 1996 to a few months ago. .">WayBack Machine</a></li>
+  <li><a href="http://www.alexa.com/siteinfo" data-toggle="tooltip" data-placement="right" title="Get website data and analytics">Alexa Site Info</a></li>
+  <li><a href="http://builtwith.com/" data-toggle="tooltip" data-placement="right" title="Find out how a website was built">builtwith.com</a></li>
+  <li><a href="http://stackoverflow.com/" data-toggle="tooltip" data-placement="right" title="If your answer is not here, nobody knows it. ">Stack Overflow</a></li>
+</ul>
+
+
+
+
+  </div>
+  <div class="span4">
+<ul class="nav nav-list tooltip-demo">
+ <li class="nav-header">Front End Frameworks</li>
+  <li class="divider"></li>
+  <li><a href="http://twitter.github.io/bootstrap/index.html" data-toggle="tooltip" data-placement="right" title="Sleek, intuitive, and powerful front-end framework for faster and easier web development. I use this for rapid prototyping">Twitter Boostrap</a></li>
+  <li><a href="http://foundation.zurb.com/">Foundation</a></li>
+  <li><a href="http://jquerymobile.com/" data-toggle="tooltip" data-placement="right" title="A Touch-Optimized UI Framework built with jQuery and HTML5.">jQuery Mobile</a></li>
+</ul>
+<br>
+<ul class="nav nav-list tooltip-demo">
+ <li class="nav-header">JavaScript</li>
+  <li class="divider"></li>
+  <li><a href="http://shichuan.github.io/javascript-patterns/" >JavaScipt Patterns</a></li>
+  <li><a href="http://www.quirksmode.org/js/contents.html" >Quirks mode general JavaScript topics</a></li>
+</ul>
+<ul class="nav nav-list tooltip-demo">
+ <li class="nav-header">Social Media Addons</li>
+  <li class="divider"></li>
+  <li><a href="http://www.addthis.com/" >AddThis.com</a></li>
+</ul>
+
+
+
+
+
+
+
+
+  </div>
+  <div class="span4">
+<ul class="nav nav-list tooltip-demo">
+  
+    <li class="nav-header">Design</li>
+  <li class="divider"></li>
+  <li><a href="http://subtlepatterns.com/">Subtle Patterns</a></li>
+   <li class="nav-header">NewsLetter</li>
+  <li><a href="http://html5weekly.com/" data-toggle="tooltip" data-placement="right" title="Weekly News Letter relating to HTML5">Html5 News Letter</a></li>
+  <li><a href="http://javascriptweekly.com/" data-toggle="tooltip" data-placement="right" title="Weekly News Letter relating to JavaScript">JavaScript News Letter</a></li>
+</ul>
+
+
+
+  </div>
+</div>
+</div>
+</div>
+CopyRight Iwan Ruslani 2013
+</footer>
+
+
+<!-- Modal and pop ups-->
+<div id="contactMe" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Contact Me:</h3>
+  </div>
+  <div class="modal-body">
+    <script type="text/javascript" src="http://form.jotform.us/jsform/31108348368153"></script>
+  </div>
+
+</div>
+
+<div id="_portfolio"></div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+
+
+
+<script>
+  $(document).scroll(function(){
+      if($(window).scrollTop() > 510){ //200 = height of the top section
+          $("#navFixed").css("display", "inline-block");
+          $("#navNor").css("display", "none");
+      }
+      else {
+          $("#navNor").css("display", "inline-block");
+          $("#navFixed").css("display", "none");
+      }
+  });
+
+  $('.tooltip-demo').tooltip({
+      //delay: { show: 300, hide: 0 },
+      selector: "a[data-toggle=tooltip]",
+      //selector: '[rel=tooltip]:not([disabled])',
+      placement: "right"
+    })
+
+
+  jQuery(document).ready(function($) {
+    $("a[href^='http://'], a[href^='https://']").attr("target","_blank");
+  });
+
+
+// Grab Portfolio
+
+ $.getJSON('/data/portfolio.json', function(data) {
+
+  var generateAPIfrontend = "<div class=\"row\"><ul class=\"thumbnails\">";
+
+  for (var i in data.porfolio) {
+    counter = i;
+
+
+
+    generateAPIfrontend += "<li class=\"span3\"><div class=\"thumbnail\">";
+    generateAPIfrontend += "<img  alt=\"300x200\" style=\"width: 300px; height: 200px;\" src=\"img\/pThumbnail\/"
+      +data.porfolio[i].image+ "\">";
+    generateAPIfrontend += "<div class=\"caption\">";   
+    generateAPIfrontend += "<h3>"+ data.porfolio[i].title + "<\/h3>";   
+    generateAPIfrontend += "<p>" + data.porfolio[i].description.substring(0,90) + "...<\/p>";   
+    generateAPIfrontend += "<p><a href=\"" + data.porfolio[i].url + "\" target=\"_blank\" class=\"btn btn-mini btn-danger\">Launch <i class=\"icon-plane icon-white\"><\/i><\/a> <a href=\"#modal"+i+"\" class=\"btn btn-mini \" data-toggle=\"modal\">More info<\/a><\/p>";   
+    generateAPIfrontend += "<\/div><\/div><\/li>"; 
+
+    generateAPIfrontend += "<div id=\"modal"+i+"\" class=\"modal hide fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">";
+    generateAPIfrontend += "<div class=\"modal-header\">";
+    generateAPIfrontend += "<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">×<\/button>";
+    generateAPIfrontend += "<h3 id=\"myModalLabel\">"+ data.porfolio[i].title +"<\/h3>";
+    generateAPIfrontend += "<\/div>";
+    generateAPIfrontend += "<div class=\"modal-body\">";
+    generateAPIfrontend += "<img  alt=\"300x200\" style=\"width: 300px; height: 200px;\" src=\"img\/pThumbnail\/"+data.porfolio[i].image+"\">";
+    generateAPIfrontend += "<p>" + data.porfolio[i].description+ "<\/p><\/div>";
+    generateAPIfrontend += "<div class=\"modal-footer\"><button class=\"btn\" data-dismiss=\"modal\" aria-hidden=\"true\">Close<\/button><button href=\"" + data.porfolio[i].url + "\"  target=\"_blank\" class=\"btn btn-primary\">Launch<\/button><\/div><\/div>";
+
+
+
+
+
+
+     if (counter == "3") {generateAPIfrontend += "<\/ul><\/div><div class=\"row\"><ul class=\"thumbnails\">"; };
+     if (counter == "7") {generateAPIfrontend += "<\/ul><\/div><div class=\"row\"><ul class=\"thumbnails\">"; };
+     if (counter == "11"){generateAPIfrontend += "<\/ul><\/div><div class=\"row\"><ul class=\"thumbnails\">"; };
+
+
+  };
+
+    generateAPIfrontend += "<\/ul><\/div>";   
+    
+
+  document.getElementById("portfolio").innerHTML=generateAPIfrontend;
+
+  });
+  
+var h = $('#wraptest').height();
+console.log(h);
+</script>
+
+
+
+
+
+  </body>
+</html>
