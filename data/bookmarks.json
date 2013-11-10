@@ -1,0 +1,44 @@
+{"bookmarks":[
+ 	{
+ 	"title":"ZoneAlarm",
+ 	"url":"http:\/\/www.zonealarm.com\/",
+ 	"image":"pthumbnail__0000_za.jpg",
+ 	"description":"ZoneAlarm&reg;, a product line of Zone Labs, L.L.C. and Check Point Software Technologies, Inc., is one of the most secure brands in consumer Internet security. ZoneAlarm protects over 80 million PCs from viruses, spyware, hackers and identity theft. The award-winning Internet security product line is installed in consumer PCs and small businesses, protecting them from Internet threats. The ZoneAlarm family of products is among the most popular and successful Internet security products available on the market. Check Point Software Technologies, Inc. is a wholly owned subsidiary of Check Point Software Technologies Ltd.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": true,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"software"
+ 	},
+ {
+    "title":"Metrous",
+    "url":"#",
+    "image":"metrous.gif",
+    "description":"Metrous was a fashion and nightlife event in San Jose.",
+    "technology":{
+        "html":false,
+        "css": false,
+        "javascript": false,
+        "jsp": false,
+        "graphics": true,
+        "cms": false,
+        "wordpress": false,
+        "jquery": false,
+        "bigcommerce": false,
+        "twitterbootstrap": false,
+        "foundationzurb": false
+        },
+    "type":"Freelance",
+    "industry":"Entertainment"
+    } 
+ ]} 	

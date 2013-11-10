@@ -1,0 +1,75 @@
+     body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      body {
+margin: 0;
+padding-bottom: 0;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 20px;
+color: #333333;
+background-image: url(img/grey.png) top repeat-x;
+/*background-image: url(http://subtlepatterns.com/patterns/grey.png);*/
+}
+#footerBg {
+background-image: url("../img/grey_wash_wall.png");
+color:#fff;
+}
+
+#navFixed {
+    position: fixed;
+    top: 41px;
+    display: none;
+    z-index: 1;
+}
+.thumbnail{background-color: #fff;}
+
+[class^="sicon-"],
+[class*="sicon-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../img/socialmedia-icons.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+.sicon-linkedin {
+  background-position: 0  0;
+}
+.sicon-github {
+  background-position: 0 -25px;
+}
+
+#Portfolio-Container {
+  margin-top: 45px;
+}
+.caption h3 {font-size: 18px;}
+/* Remove text shadow for footer links */
+.nav-list > li > a, .nav-list .nav-header {
+text-shadow: none;
+}
+.nav-list > .active > a:hover, .nav-list > li > a:hover {
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #000;
+}
+.tooltip-demo a {
+color: rgb(58, 189, 255);
+
+}
+.tooltip-demo > li > a {
+display: inline;
+}
+#map-canvas { height: 489px; }
+#map-canvas img { 
+  max-width: none;
+}
+
+#map-canvas label { 
+  width: auto; display:inline; 
+} 

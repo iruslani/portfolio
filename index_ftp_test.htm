@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html ng-app lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Portfolio of Iwan Ruslani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am a web producer and front-end developer, working with businesses and organizations to create attractive user centric and intuitive websites.">
+    <meta name="keywords" content="Web Developer, Web Producer, Developer, HTML5, CSS3, JavaScript, jQuery, JSP, Enginner, Software Developer, Software Enginner, ">
+    <meta name="author" content="Iwan Ruslani">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+
+
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpjC_JCxvQ7TrXyRQZooZHfoMcoMJW1Js&sensor=true">
+</script>
+
+
+<script type="text/javascript">
+
+// https://developers.google.com/maps/documentation/javascript/tutorial
+
+var map;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  // Try HTML5 geolocation
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+
+
+
+
+      var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h2 id="firstHeading" class="firstHeading">Whooooooooo</h2>'+
+          '<div id="bodyContent">'+
+          '<p>I found you!!!</p>'+
+          '</div>'+
+          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+          map: map,
+          position: pos,
+          content: contentString
+      }); map.setCenter(pos);
+    }, function() {
+      handleNoGeolocation(true);
+    });
+  } else {
+    // Browser doesn't support Geolocation
+    handleNoGeolocation(false);
+  }
+}
+
+function handleNoGeolocation(errorFlag) {
+  if (errorFlag) {
+    var content = 'Error: The Geolocation service failed. I will just show you my location';
+  } else {
+    var content = 'Error: Your browser doesn\'t support geolocation. I will just show you my location';
+  }
+
+  var options = {
+    map: map,
+    position: new google.maps.LatLng(37.655173999999995,-122.4544373),
+    content: content
+  };
+
+  var infowindow = new google.maps.InfoWindow(options);
+  map.setCenter(options.position);
+}
+
+   
+
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Welcome to my Portfolio</a>
+          <div class="nav-collapse collapse pull-right" style="margin-right:90px;">
+            <ul class="nav">
+  
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MENU<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://about.me/iruslani">About Me</a></li>
+                  <li><a href="https://docs.google.com/document/d/1PuBOvhJGTfpoXnv1Rdfn45A3oBYZ2qQrmYEtTKipRc4/edit?usp=sharing">Resume</a></li>
+                  <li><a href="#contactMe" data-toggle="modal">Contact Me</a></li>
+                  <li><a href="http://stackoverflow.com/users/1440509/iwan" data-toggle="modal">StackOverflow</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Portfolio</li>
+                  <li><a href="#">Employment</a></li>
+                  <li><a href="#">Freelance</a></li>
+                  <li><a href="#">Graphics</a></li>
+                  <li><a href="samples/clubworks/tv/redwhiteblue.html">Flash</a></li>
+                  <li><a href="blog/tumblr_api_test.html">tumblr API test</a></li>
+                  <li><a href="/appdemo/json-example/">json Example</a></li>
+                </ul>
+              </li>
+              
+             
+            </ul>
+           
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+  
+
+  <div class="span2">
+  <ul class="thumbnails">
+  <li class="span2">
+    <a href="#" class="thumbnail">
+      <img data-src="img/suitup.jpg" alt="I'm the guy on the right" style="width: 160px; height: 146px;" src="img/suitup.jpg">
+    </a>
+  </li>
+  </ul>
+
+
+    <h3>
+     Iwan Ruslani
+    </h3>
+
+    <p><a href="#contactMe" data-toggle="modal"> iruslani75(at)gmail.com</a>  <i class="icon-edit"></i> </P>
+
+   <p> <i class="icon-map-marker"></i> <small>Daly City</small> 
+       <i class="icon-heart"></i> <small>Web Developer</small> 
+
+   </p>
+   <a class="btn btn-info" href="http://www.linkedin.com/pub/iwan-ruslani/4/a56/665"><i class="sicon-linkedin"></i>&nbsp;&nbsp;Linkdin</a>
+   <p></p>
+      <a class="btn" href="https://github.com/iruslani"><i class="sicon-github"></i>&nbsp;&nbsp;Github</a>
+   <p></p>
+  </div> <!-- span2 -->
+
+
+  <div class="span9"> 
+
+<!-- Start Carousel -->
+    <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner">
+
+ <!-- Carousel Content 1 hidden-->
+      
+        <!--<img src="img/xxx/2013_playoffs_1920x1080.jpg" alt="">-->
+
+
+
+ <!-- Carousel Content 2-->
+    <div class="item active">
+        <div class="container">
+
+        <p id="demo">Click the button to get your coordinates:</p>
+        <button onclick="getLocation()">Try It</button>
+        <script>
+        var x=document.getElementById("demo");
+        function getLocation()
+          {
+          if (navigator.geolocation)
+            {
+            navigator.geolocation.getCurrentPosition(showPosition);
+            }
+          else{x.innerHTML="Geolocation is not supported by this browser.";}
+          }
+        function showPosition(position)
+          {
+          x.innerHTML="Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;  
+          }
+            </script>
+            <br>
+        <div id="map-canvas"></div>
+        </div>
+    </div>
+
+ <!-- Carousel Content 3-->
+    <div class="item">
+       
+          <div class="container">
+            <h3>AngularJS Sample</h3>
+        </div>
+<input type="text" ng-model="name">
+<p>Hello {{name}}</p>
+
+    </div>
+
+</div>
+<!-- end carousel inner -->
+
+
+
+
+<!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+
+    </div>
+    </div>
+  
+  </div> <!-- span4-->
+
+</div> <!-- row -->
+</div> <!-- containner-->
+
+
+
+<div class="container">
+<div id="navNor" class="navbar  ">
+
+      <div class="navbar-inner">
+
+        <div class="container">
+           <a class="brand" href="#">Samples of my work:</a>
+          <button type="button" class="btn btn-navbar" data-toggle="collapse2" data-target=".nav-collapse2">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    
+          <div class="nav-collapse2 collapse2 pull-left">
+            <ul class="nav">
+              <li class="active"><a href="#">Events</a></li>
+              <li><a href="#about">All</a></li>
+              <li><a href="#about">code</a></li>
+              <li><a href="#about">graphics</a></li>
+            </ul>
+           </div>
+
+          <form class="navbar-search pull-right">
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
+
+        </div>
+      </div>
+    </div> 
+</div>
+<!-- /navbar -->
+
+
+<div id="navFixed" class="navbar  navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse2" data-target=".nav-collapse2">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    
+          <div class="nav-collapse2 collapse2 pull-left">
+            <ul class="nav">
+              <li class="active"><a href="#">Events</a></li>
+              <li><a href="#about">All</a></li>
+              <li><a href="#about">code</a></li>
+              <li><a href="#about">graphics</a></li>
+            </ul>
+           </div>
+
+          <form class="navbar-search pull-right">
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
+
+        </div>
+      </div>
+    </div> 
+<!-- /navbar-fixed -->
+
+
+
+
+<!-- start Cards row 1-->
+
+<div class ="container" id="Portfolio-Container">
+<div class = "row">
+
+<ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <img  alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0000_za.jpg">
+                  <div class="caption">
+                    <h3>ZoneAlarm</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0003_cp.jpg">
+                  <div class="caption">
+                    <h3>CheckPoint Software</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0013_visa.jpg">
+                  <div class="caption">
+                    <h3>Visa</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>
+                  </div>
+                </div>
+              </li>
+        <li class="span3">
+                <div class="thumbnail">
+                  <img  alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0002_netapp.jpg">
+                  <div class="caption">
+                    <h3>NetApp</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>                  
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+
+
+</div>
+</div>
+
+<!-- end Cards row 1-->
+
+<!-- start Cards row 2-->
+
+<div class ="container">
+<div class = "row">
+
+<ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0009_mrsfc.jpg">
+                  <div class="caption">
+                    <h3>MrSFC</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>
+                </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0012_vaporyshop.jpg">
+                  <div class="caption">
+                    <h3>VaporyShop</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>                   </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0001_californiafoundation.jpg">
+                  <div class="caption">
+                    <h3>The California Foundation</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>                  </div>
+                </div>
+              </li>
+        <li class="span3">
+          <div class="thumbnail">
+            <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0005_globalfluency.jpg">
+            <div class="caption">
+              <h3>GlobalFluency</h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>            </div>
+          </div>
+        </li>
+  </ul>
+
+
+
+</div>
+</div>
+
+<!-- end Cards row 2-->
+
+
+
+
+
+<!-- start Cards row 3-->
+<div class ="container">
+<div class = "row">
+
+<ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0008_mcafee.jpg">
+                  <div class="caption">
+                    <h3>McAfee</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>                  </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0006_howry.jpg">
+                  <div class="caption">
+                    <h3>Howry</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>               
+               </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0010_rwcchamber.jpg">
+                  <div class="caption">
+                    <h3>RedWood City Chamber</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a href="#" class="btn btn-mini btn-danger">Add it +</a> <a href="#" class="btn btn-mini ">Follow</a></p>
+                  </div>
+                </div>
+              </li>
+        <li class="span3">
+                <div class="thumbnail">
+                  <img alt="300x200" style="width: 300px; height: 200px;" src="img/pThumbnail/pthumbnail__0007_keynote.jpg">
+                  <div class="caption">
+                    <h3>KeyNote</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a href="http://www.zonealarm.com/" class="btn btn-mini btn-danger">Launch <i class="icon-plane icon-white"></i></a> <a href="#" class="btn btn-mini ">More info</a></p>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+
+
+
+</div>
+</div>
+<!-- end Cards row 3-->
+
+
+<footer >
+  <div id="footerBg">
+<div class="container" >
+
+<div class="row-fluid"><h4>My BookMarks:</h4></div>  
+<div class="row-fluid">
+  
+  <div class="span4">
+
+
+
+
+<ul class="nav nav-list tooltip-demo">
+  <li class="nav-header">Developer Tools</li>
+  <li class="divider"></li>
+  <li><a href="https://developers.google.com/chrome-developer-tools/" data-toggle="tooltip" data-placement="right" title="A web developers best friend. Ctrl+Shift+I on a Mac">Chrome Dev Tools</a></li>
+  <li><a href="http://www.google.com/analytics/" data-toggle="tooltip" data-placement="right" title="We're watching you">Google Analytics</a></li>
+  <li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
+  <li><a href="http://devtellect.github.io/sublime-twitter-bootstrap-snippets/">Sublime Text2 Twitter Boostrap Snippet</a></li>
+  <li><a href="http://www.funduc.com/#">Search and Replace</a></li>
+  <li><a href="http://www.unicodetools.com/unicode/convert-to-html.php" data-toggle="tooltip" data-placement="right" title="Copy and paste those translations with the funny characters here.">Unicode to HTML Converter</a></li>
+  <li><a href="http://www.image-maps.com/" data-toggle="tooltip" data-placement="right" title="Image map creators for people who dont know how to map coordinates =P">Image Maps</a></li>
+  <li><a href="https://filezilla-project.org/" data-toggle="tooltip" data-placement="right" title="A free simple to use FTP client. My favorite feature is: synchronize browsing.">FileZilla</a></li>
+  <li><a href="http://yeoman.io/" data-toggle="tooltip" data-placement="right" title="Yeoman is a robust and opinionated client-side stack, comprising tools and frameworks that can help developers quickly build beautiful web applications.">Yeoman</a></li>
+  <li><a href="http://www.webpagetest.org/" data-toggle="tooltip" data-placement="right" title="This site provides rich diagnostic information including resource loading waterfall charts, Page Speed optimization checks and suggestions for improvements.">webpagetest.org</a></li>
+  <li><a href="http://archive.org/web/web.php" data-toggle="tooltip" data-placement="right" title="Fun stuff. Browse through over 240 billion web pages archived from 1996 to a few months ago. .">WayBack Machine</a></li>
+  <li><a href="http://www.alexa.com/siteinfo" data-toggle="tooltip" data-placement="right" title="Get website data and analytics">Alexa Site Info</a></li>
+  <li><a href="http://builtwith.com/" data-toggle="tooltip" data-placement="right" title="Find out how a website was built">builtwith.com</a></li>
+  <li><a href="http://stackoverflow.com/" data-toggle="tooltip" data-placement="right" title="If your answer is not here, nobody knows it. ">Stack Overflow</a></li>
+  
+
+</ul>
+
+
+
+
+  </div>
+  <div class="span4">
+<ul class="nav nav-list tooltip-demo">
+ <li class="nav-header">Front End Frameworks</li>
+  <li class="divider"></li>
+  <li><a href="http://twitter.github.io/bootstrap/index.html" data-toggle="tooltip" data-placement="right" title="Sleek, intuitive, and powerful front-end framework for faster and easier web development. I use this for rapid prototyping">Twitter Boostrap</a></li>
+  <li><a href="http://foundation.zurb.com/">Foundation</a></li>
+  <li><a href="http://jquerymobile.com/" data-toggle="tooltip" data-placement="right" title="A Touch-Optimized UI Framework built with jQuery and HTML5.">jQuery Mobile</a></li>
+</ul>
+<br>
+<ul class="nav nav-list tooltip-demo">
+ <li class="nav-header">JavaScript</li>
+  <li class="divider"></li>
+  <li><a href="http://shichuan.github.io/javascript-patterns/" >JavaScipt Patterns</a></li>
+</ul>
+<ul class="nav nav-list tooltip-demo">
+ <li class="nav-header">Social Media Addons</li>
+  <li class="divider"></li>
+  <li><a href="http://www.addthis.com/" >AddThis.com</a></li>
+</ul>
+
+
+
+
+
+
+
+
+  </div>
+  <div class="span4">
+<ul class="nav nav-list tooltip-demo">
+  
+    <li class="nav-header">Design</li>
+  <li class="divider"></li>
+  <li><a href="http://subtlepatterns.com/">Subtle Patterns</a></li>
+   <li class="nav-header">NewsLetter</li>
+  <li><a href="http://html5weekly.com/" data-toggle="tooltip" data-placement="right" title="Weekly News Letter relating to HTML5">Html5 News Letter</a></li>
+  <li><a href="http://javascriptweekly.com/" data-toggle="tooltip" data-placement="right" title="Weekly News Letter relating to JavaScript">JavaScript News Letter</a></li>
+</ul>
+
+
+
+<h4>Miscellaneous:</h4>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+
+  </div>
+</div>
+</div>
+</div>
+CopyRight Iwan Ruslani 2013
+</footer>
+
+
+<!-- Modal and pop ups-->
+<div id="contactMe" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Contact Me:</h3>
+  </div>
+  <div class="modal-body">
+    <script type="text/javascript" src="http://form.jotform.us/jsform/31108348368153"></script>
+  </div>
+
+</div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+    <script>
+  $(document).scroll(function(){
+      if($(window).scrollTop() > 510){ //200 = height of the top section
+          $("#navFixed").css("display", "inline-block");
+          $("#navNor").css("display", "none");
+      }
+      else {
+          $("#navNor").css("display", "inline-block");
+          $("#navFixed").css("display", "none");
+      }
+  });
+
+  $('.tooltip-demo').tooltip({
+      //delay: { show: 300, hide: 0 },
+      selector: "a[data-toggle=tooltip]",
+      //selector: '[rel=tooltip]:not([disabled])',
+      placement: "right"
+    })
+
+
+  jQuery(document).ready(function($) {
+    $("a[href^='http://'], a[href^='https://']").attr("target","_blank");
+  });
+    </script>
+
+
+
+
+
+
+  </body>
+</html>

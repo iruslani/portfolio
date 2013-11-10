@@ -1,0 +1,296 @@
+{"porfolio":[
+ 	{
+ 	"title":"ZoneAlarm",
+ 	"url":"http:\/\/www.zonealarm.com\/",
+ 	"image":"pthumbnail__0000_za.jpg",
+ 	"description":"ZoneAlarm&reg;, a product line of Zone Labs, L.L.C. and Check Point Software Technologies, Inc., is one of the most secure brands in consumer Internet security. ZoneAlarm protects over 80 million PCs from viruses, spyware, hackers and identity theft. The award-winning Internet security product line is installed in consumer PCs and small businesses, protecting them from Internet threats. The ZoneAlarm family of products is among the most popular and successful Internet security products available on the market. Check Point Software Technologies, Inc. is a wholly owned subsidiary of Check Point Software Technologies Ltd.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": true,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"software"
+ 	},
+ 	{
+ 	"title":"CheckPoint Software",
+ 	"url":"http:\/\/www.checkpoint.com\/",
+ 	"image":"pthumbnail__0003_cp.jpg",
+ 	"description":"Check Point Software Technologies Ltd. (www.checkpoint.com), the worldwide leader in securing the Internet, provides customers with uncompromised protection against all types of threats, reduces security complexity and lowers total cost of ownership. Check Point first pioneered the industry with FireWall-1 and its patented stateful inspection technology. Today, Check Point continues to develop new innovations based on the Software Blade Architecture, providing customers with flexible and simple solutions that can be fully customized to meet the exact security needs of any organization. Check Point is the only vendor to go beyond technology and define security as a business process. Check Point 3D Security uniquely combines policy, people and enforcement for greater protection of information assets and helps organizations implement a blueprint for security that aligns with business needs. Customers include tens of thousands of organizations of all sizes, including all Fortune and Global 100 companies. Check Point's award-winning ZoneAlarm solutions protect millions of consumers from hackers, spyware and identity theft.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": false,
+ 		"cms": true,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"software"
+ 	},
+  	{
+ 	"title":"Visa",
+ 	"url":"http:\/\/usa.visa.com\/",
+ 	"image":"pthumbnail__0013_visa.jpg",
+ 	"description":"Visa is a global payments technology company that enables consumers, businesses, financial institutions and governments to use electronic payments instead of cash and checks. Visa has built one of the world’s most advanced processing networks - VisaNet.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": false,
+ 		"jsp": false,
+ 		"graphics": false,
+ 		"cms": true,
+ 		"wordpress": false,
+ 		"jquery": false,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"contract",
+ 	"industry":"finance"
+ 	},
+   	{
+ 	"title":"NetApp",
+ 	"url":"http:\/\/www.netapp.com\/us\/",
+ 	"image":"pthumbnail__0002_netapp.jpg",
+ 	"description":"NetApp creates innovative products—storage systems and software that help customers around the world store, manage, protect, and retain one of their most precious corporate assets: their data. We are recognized throughout the industry for continually pushing the limits of today’s technology so that our customers never have to choose between saving money and acquiring the capabilities they need to be successful.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": false,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": true,
+ 		"wordpress": false,
+ 		"jquery": false,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"contract",
+ 	"industry":"technology"
+ 	},
+    {
+ 	"title":"MrSFC",
+ 	"url":"http:\/\/mrsfc.com",
+ 	"image":"pthumbnail__0009_mrsfc.jpg",
+ 	"description":"Carved from the mind made straight in to material, Mister brand puts a modernistic spin on classic men's attire.  The inherently stylish, San Francisco-born designers engineer their garments to contain quality and comfort, with superior attention to detail and everlasting style.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": true,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"freelance",
+ 	"industry":"retail"
+ 	},
+    {
+ 	"title":"VaporyShop",
+ 	"url":"http:\/\/VaporyShop.com",
+ 	"image":"pthumbnail__0012_vaporyshop.jpg",
+ 	"description":"The Bay Areas premier electronic cigarette store. Located in San Francisco, the Vapory Shop brings a more healthier alternative to smoking traditional cigarettes.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": true,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": true
+ 		},
+ 	"type":"freelance",
+ 	"industry":"retail"
+ 	},
+     {
+ 	"title":"The California Foundation",
+ 	"url":"http:\/\/thecaliforniafoundation.org\/blog\/",
+ 	"image":"pthumbnail__0001_californiafoundation.jpg",
+ 	"description":"The California Foundation’s mission is to eradicate generational poverty, crime and violence in California by providing its underserved communities and low-income students with resources for educational achievement and prosperity.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": true,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"freelance",
+ 	"industry":"non-profit"
+ 	},
+     {
+ 	"title":"GlobalFluency",
+ 	"url":"http:\/\/www.globalfluency.com\/index.html",
+ 	"image":"pthumbnail__0005_globalfluency.jpg",
+ 	"description":"GlobalFluency is a high-performance marketing and communications services firm offering clients breakthrough programs for shaping perceptions, growing customer relationships and building valued brands. Our capabilities span brand positioning, public relations, content marketing, creative and digital services, social engagement, lead generation and affinity networking. ",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"Marketing \/ PR"
+ 	},	
+     {
+ 	"title":"McAfee",
+ 	"url":"http:\/\/www.mcafee.com\/us\/",
+ 	"image":"pthumbnail__0008_mcafee.jpg",
+ 	"description":"McAfee is the world’s largest dedicated security technology company. Delivering proactive and proven solutions and services that help secure systems and networks around the world, McAfee protects consumers and businesses of all sizes from the latest malware and emerging online threats. Our solutions are designed to work together, integrating antimalware, antispyware, and antivirus software with security management features that deliver unsurpassed real-time visibility and analytics, reduce risk, ensure compliance, improve Internet security, and help businesses achieve operational efficiencies.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": true,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"software"
+ 	},	
+     {
+ 	"title":"Howry",
+ 	"url":"http:\/\/howry.com\/",
+ 	"image":"pthumbnail__0006_howry.jpg",
+ 	"description":"For 24 years, Howry has helped start-ups to Fortune 100 companies differentiate themselves in their competitive markets. We excel in message-driven design, combining both strategic and visual elements that create, refresh and strengthen brands. Our unyielding commitment to excellence seeks to exceed expectations at every step, from strategic planning through design presentation, production and delivery.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"Marketing \/ PR"
+ 	},
+     {
+ 	"title":"RedWood City Chamber",
+ 	"url":"http:\/\/www.redwoodcitychamber.com\/",
+ 	"image":"pthumbnail__0010_rwcchamber.jpg",
+ 	"description":"The mission of the Redwood City, San Mateo County Chamber of Commerce is to promote economic prosperity for our community through business representation and advocacy with emphasis on information,communication and education.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"Civil"
+ 	},	
+     {
+ 	"title":"KeyNote",
+ 	"url":"http:\/\/www.keynote.com\/",
+ 	"image":"pthumbnail__0007_keynote.jpg",
+ 	"description":"KeyNote provides companies with solutions for continuously improving the online experience. With Keynote, companies know precisely how their Web sites, content, and applications perform on actual browsers, networks, and mobile devices.",
+ 	"technology":{
+ 		"html":true,
+ 		"css": true,
+ 		"javascript": true,
+ 		"jsp": false,
+ 		"graphics": true,
+ 		"cms": false,
+ 		"wordpress": false,
+ 		"jquery": true,
+ 		"bigcommerce": false,
+ 		"twitterbootstrap": false,
+ 		"foundationzurb": false
+ 		},
+ 	"type":"employment",
+ 	"industry":"Civil"
+ 	},
+    {
+    "title":"Magik",
+    "url":"#",
+    "image":"magik.gif",
+    "description":"Magik was an event promotion company specializing in the San Francisco nightlife scene.",
+    "technology":{
+        "html":false,
+        "css": false,
+        "javascript": false,
+        "jsp": false,
+        "graphics": true,
+        "cms": false,
+        "wordpress": false,
+        "jquery": false,
+        "bigcommerce": false,
+        "twitterbootstrap": false,
+        "foundationzurb": false
+        },
+    "type":"Freelance",
+    "industry":"Entertainment"
+    },
+   {
+    "title":"Metrous",
+    "url":"#",
+    "image":"metrous.gif",
+    "description":"Metrous was a fashion and nightlife event in San Jose.",
+    "technology":{
+        "html":false,
+        "css": false,
+        "javascript": false,
+        "jsp": false,
+        "graphics": true,
+        "cms": false,
+        "wordpress": false,
+        "jquery": false,
+        "bigcommerce": false,
+        "twitterbootstrap": false,
+        "foundationzurb": false
+        },
+    "type":"Freelance",
+    "industry":"Entertainment"
+    } 
+ ]}

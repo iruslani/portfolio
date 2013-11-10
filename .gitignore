@@ -1,0 +1,6 @@
+_dont_Upload/
+venv
+appdemo
+*.pyc
+staticfiles
+modal.html
