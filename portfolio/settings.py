@@ -8,7 +8,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
+import dj_database_url, os, os.path
 #DATABASES['default'] =  dj_database_url.config()
 DATABASES = {
     'default': dj_database_url.config(default='sqlite:///db.sqlite')
@@ -21,7 +21,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Static asset configuration
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
-import os
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 
@@ -31,7 +31,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'template').replace('\\','/'),
+    '/users/iwan/documents/websites/iwanruslani.com/template',
 
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -72,7 +76,6 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'portfolio.urls'
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
