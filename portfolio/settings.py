@@ -17,16 +17,12 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Static asset configuration
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
-
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(PROJECT_PATH, 'static'),
 )
 
 # Template directory stuff below:
