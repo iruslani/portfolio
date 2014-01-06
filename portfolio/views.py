@@ -4,10 +4,17 @@ from django.template import Context
 import datetime
 
 def home(request):
-    return HttpResponse("Welcome to my Portfolio")
+    current_section = "Home"
+    message = "Welcome to my Portfolio"
+    t = get_template('page.html')
+    html = t.render(Context({'message': message, "current_section": current_section}))
+    return HttpResponse(html)
 
 def hello(request):
-    return HttpResponse("Hello world")
+    message = "Hello world"
+    t = get_template('page.html')
+    html = t.render(Context({'message': message}))
+    return HttpResponse(html)
 
 def template(request):
     message = "Hello World"
