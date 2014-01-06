@@ -9,10 +9,8 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 # Parse database configuration from $DATABASE_URL
 import dj_database_url, os, os.path
-#DATABASES['default'] =  dj_database_url.config()
-DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite')
-}
+
+
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -92,21 +90,25 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-#DATABASES = {
-#    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
-#}
-
-# originial settings
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "portfolio",
-        "USER": "",
-        "PASSWORD": "",
-        "HOST": "localhost",
-        "PORT": "",
-    }
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
+
+# originial settings (uncomment for local DB)
+#DATABASES['default'] =  dj_database_url.config()
+DATABASES = {
+    'default': dj_database_url.config()
+}
+#DATABASES = {
+#    "default": {
+#        "ENGINE": "django.db.backends.postgresql_psycopg2",
+#        "NAME": "portfolio",
+#        "USER": "",
+#        "PASSWORD": "",
+#        "HOST": "localhost",
+#        "PORT": "",
+#    }
+#}
 
 
 # Internationalization
@@ -125,5 +127,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
+try:
+    from local_settings import *
+except Exception as e:
+    print e.message
 

@@ -4,3 +4,5 @@ appdemo
 *.pyc
 staticfiles
 modal.html
+websites/
+local_settings.py
