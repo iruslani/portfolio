@@ -11,9 +11,10 @@ def home(request):
     return HttpResponse(html)
 
 def hello(request):
+    current_section = request.path
     message = "Hello world"
     t = get_template('page.html')
-    html = t.render(Context({'message': message}))
+    html = t.render(Context({'message': message, "current_section": current_section}))
     return HttpResponse(html)
 
 def template(request):
@@ -39,4 +40,21 @@ def hours_ahead(request, offset):
     message = "In %s hour(s), it will be %s." % (offset, dt)
     current_section = "Hours Ahead"
     html = t.render(Context({'message': message, "current_section": current_section}))    
+    return HttpResponse(html)
+
+def display_meta(request):
+    values = request.META.items()
+    values.sort()
+    html = []
+    for k, v in values:
+        html.append('<tr><td>%s</td><td>%s</td></tr>' % (k, v))
+    return HttpResponse('<table>%s</table>' % '\n'.join(html))
+
+def search(request):
+    if 'search' in request.GET:
+        message = 'You searched for: %s' % request.GET['search']
+    else:
+        message = 'You submitted an empty form or the submit string is missing.'
+    t = get_template('page.html')
+    html = t.render(Context({'message': message}))  
     return HttpResponse(html)
